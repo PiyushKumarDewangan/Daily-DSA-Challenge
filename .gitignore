@@ -1,0 +1,11 @@
+# Ignore C++ Executables
+*.exe
+*.out
+*.o
+*.obj
+
+# Ignore VS Code configuration
+.vscode/
+
+# Ignore compiled binaries
+bin/
