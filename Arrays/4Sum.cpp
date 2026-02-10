@@ -12,11 +12,11 @@ public:
         for (int i = 0; i < n; i++)
         {
             if(i>0 && nums[i]==nums[i-1]) continue;
-            for (int j = 0; j < i+1; )
+            for (int j = i+1; j < n; )
             {
                 int p = j+1, q= n-1;
                 while(p<q){
-                    long long sum = (long long)nums[i]+(long long)nums[j]+(long long)nums[q]+(long long)nums[q];
+                    long long sum = (long long)nums[i]+(long long)nums[j]+(long long)nums[p]+(long long)nums[q];
 
                     if( sum< tar){
                         p++;
@@ -36,4 +36,5 @@ public:
         return ans;
         
     }
+
 };
